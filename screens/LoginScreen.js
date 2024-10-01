@@ -34,7 +34,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <View style={{ padding: 20 }}>
+    <View style={{ padding: 20 , backgroundColor:'white' }}>
       <TextInput
         placeholder="Username"
         value={username}

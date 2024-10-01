@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, Button, StyleSheet, Alert, TouchableOpacity} from 'react-native';
+import { View, Text, Image, StyleSheet, Alert, TouchableOpacity, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const ProductDetail = ({ route, navigation }) => {
@@ -38,6 +38,7 @@ const ProductDetail = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
+      <ScrollView>
       <Image
         source={{ uri: product.image }}
         style={styles.productImage}
@@ -56,6 +57,7 @@ const ProductDetail = ({ route, navigation }) => {
           <Text style={styles.iconText}>Update</Text>
         </TouchableOpacity>
       </View>
+      </ScrollView>
     </View>
   );
 };
